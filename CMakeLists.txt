@@ -3,11 +3,8 @@ project(RunningMedian)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(RunningMedian_run main.cpp)
+enable_testing()
 
-include_directories(RunningMedian_lib)
-add_subdirectory(RunningMedian_lib)
-
-target_link_libraries(RunningMedian_run RunningMedian_lib)
-
-add_subdirectory(RunningMedian_tests)
+add_subdirectory(src)
+add_subdirectory(test)
+add_subdirectory(libs/gtest)

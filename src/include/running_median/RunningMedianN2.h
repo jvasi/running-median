@@ -6,7 +6,7 @@
 #define RUNNINGMEDIAN_RUNNINGMEDIAN_N2_H
 
 #include <vector>
-#include "IRunningMedian.h"
+#include <running_median/IRunningMedian.h>
 
 /**
  *  Running median O(N^2) implementation using sorted array of elements.

@@ -1,0 +1,2 @@
+add_executable(running_median main.cpp)
+target_link_libraries(running_median libRunningMedian)

@@ -28,11 +28,6 @@ To checkout the repository:
 $ git clone --recurse-submodules https://github.com/jvasi/running-median.git
 ```
 
-### Project structure
-* `RunningMedian_lib` - contains the running median algorithm implementations.
-* `RunningMedian_tests` - contains the running median algorithm tests.
-* `main.cpp` - contains code for interactive mode.
-
 ### Build
 
 Create a build folder:
@@ -55,12 +50,13 @@ $ make
 To run tests:
 ```bash
 $ cd build
-$ ./RunningMedian_tests/RunningMedian_tests_run
+$ make test
 ```
 
 To run an interactive session:
 ```bash
-$ ./RunningMedian_run
+$ cd build
+$ ./src/runningMedian/running_median
 ```
 
 ### Future improvements

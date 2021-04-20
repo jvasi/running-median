@@ -1,6 +1,5 @@
 #include <iostream>
-#include <RunningMedianN2.h>
-#include <RunningMedianNlogN.h>
+#include <running_median/RunningMedianNlogN.h>
 
 /**
  * Sample usage of the running median implementation.

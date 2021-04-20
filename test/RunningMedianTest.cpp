@@ -5,9 +5,9 @@
 #include <algorithm>
 #include <list>
 #include <sstream>
-#include "gtest/gtest.h"
-#include "RunningMedianN2.h"
-#include "RunningMedianNlogN.h"
+#include <gtest/gtest.h>
+#include <running_median/RunningMedianN2.h>
+#include <running_median/RunningMedianNlogN.h>
 
 /**
  * Quick and easy implementation of median used for verifying the IRunningMedian implementations.

@@ -6,7 +6,7 @@
 #define RUNNINGMEDIAN_RUNNINGMEDIAN_NLOGN_H
 
 #include <queue>
-#include "IRunningMedian.h"
+#include <running_median/IRunningMedian.h>
 
 /**
  *  Running median O(NlogN) implementation using Min and Max heaps.

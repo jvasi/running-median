@@ -1,6 +1,5 @@
 project(RunningMedian_tests)
 add_subdirectory(lib)
-
 include_directories(${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
 
 # adding the RunningMedian_tests_run target

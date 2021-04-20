@@ -1,6 +1,6 @@
 #include <algorithm>
 #include <stdexcept>
-#include "RunningMedianN2.h"
+#include <running_median/RunningMedianN2.h>
 
 void RunningMedianN2::addNumber(double number)
 {

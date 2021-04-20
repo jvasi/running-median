@@ -1,0 +1,3 @@
+add_subdirectory(libRunningMedian)
+add_subdirectory(runningMedian)
+include_directories(include)

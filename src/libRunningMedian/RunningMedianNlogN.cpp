@@ -1,5 +1,5 @@
 #include <stdexcept>
-#include "RunningMedianNlogN.h"
+#include <running_median/RunningMedianNlogN.h>
 
 void RunningMedianNlogN::addNumber(double number)
 {
