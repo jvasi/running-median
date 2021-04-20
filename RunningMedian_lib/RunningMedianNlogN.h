@@ -19,22 +19,22 @@ class RunningMedianNlogN : public IRunningMedian
 {
  private:
 	/**
-	 * Heap containing elements to the left of the median.
+	 * Heap containing elements lower or equal to the median.
 	 */
 	std::priority_queue<double> maxHeap;
 
 	/**
-	 * Heap containing elements to the right of the median.
+	 * Heap containing elements greater or equal to the median.
 	 */
 	std::priority_queue<double, std::vector<double>, std::greater<double>> minHeap;
 
  public:
 	/**
 	 * Add a number to the collection.
-	 * Complexity: O(NlogN)
+	 * Complexity: O(logN)
 	 * @param number the number to add.
 	 */
-	void addNumber(const double number) override;
+	void addNumber(double number) override;
 
 	/**
 	 * Calculate and return the median of all added numbers.

@@ -2,6 +2,7 @@
  * Running median tests.
  */
 
+#include <algorithm>
 #include <list>
 #include <sstream>
 #include "gtest/gtest.h"

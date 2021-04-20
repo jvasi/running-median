@@ -1,7 +1,8 @@
+#include <algorithm>
 #include <stdexcept>
 #include "RunningMedianN2.h"
 
-void RunningMedianN2::addNumber(const double number)
+void RunningMedianN2::addNumber(double number)
 {
 	numbers.insert(std::upper_bound(numbers.begin(), numbers.end(), number), number);
 }

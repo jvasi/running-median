@@ -1,5 +1,5 @@
 /**
- * Running median algorithm base class.
+ * Definition of the running algorithm interface.
  */
 
 #ifndef RUNNINGMEDIAN_IRUNNINGMEDIAN_H
@@ -16,7 +16,7 @@ class IRunningMedian
 	 * Add a number to the collection.
 	 * @param number the number to add.
 	 */
-	virtual void addNumber(const double number) = 0;
+	virtual void addNumber(double number) = 0;
 
 	/**
 	 * Calculate and return the median of all added numbers.

@@ -5,7 +5,6 @@
 #ifndef RUNNINGMEDIAN_RUNNINGMEDIAN_N2_H
 #define RUNNINGMEDIAN_RUNNINGMEDIAN_N2_H
 
-#include <algorithm>
 #include <vector>
 #include "IRunningMedian.h"
 
@@ -28,7 +27,7 @@ class RunningMedianN2 : public IRunningMedian
 
 	/**
 	 * Add a number to the collection.
-	 * Complexity: O(N^2)
+	 * Complexity: O(N)
 	 * @param number the number to add.
 	 */
 	void addNumber(double number) override;
