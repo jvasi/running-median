@@ -1,8 +1,10 @@
 ### Algorithm implementations overview
 
 Running median implementation. Two algorithms are available:
-* With complexity O(N<sup>2</sup>)
-* With complexity O(Nlog<sub>2</sub>N)
+* With running complexity O(N<sup>2</sup>)
+* With running complexity O(Nlog<sub>2</sub>N)
+
+Both algorithms have the same space complexity - O(N). 
 
 The O(N<sup>2</sup>) implementation keeps a sorted array with all added numbers (using merge sort). The median is 
 calculated by either taking the middle element (if the array has odd number of elements) or the average of the two 
@@ -28,7 +30,7 @@ $ git clone --recurse-submodules https://github.com/jvasi/running-median.git
 
 ### Project structure
 * `RunningMedian_lib` - contains the running median algorithm implementations.
-* `Google_tests` - contains the running median algorithm tests.
+* `RunningMedian_tests` - contains the running median algorithm tests.
 * `main.cpp` - contains code for interactive mode.
 
 ### Build
@@ -53,7 +55,7 @@ $ make
 To run tests:
 ```bash
 $ cd build
-$ ./Google_tests/Google_Tests_run
+$ ./RunningMedian_tests/RunningMedian_tests_run
 ```
 
 To run an interactive session:
